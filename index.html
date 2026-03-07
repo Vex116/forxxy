@@ -286,11 +286,11 @@
         
         <div class="header">
             <div class="pet-icon">( 汪！• ᴥ • )</div>
-            <div class="title">你好，我是被专属彩蛋唤醒的桌宠</div>
+            <div class="title">你好，我是被唤醒的桌宠</div>
         </div>
         
         <div class="content">
-            <p>造我的那个人其实不太擅长当面说一些认真话，所以就偷偷把几句话放在这里，当作一个小小的彩蛋。</p>
+            <p>做这个的人不太擅长把认真话说出来，所以偷偷留了一个小彩蛋在这里。</p>
 
             <hr class="divider">
             
@@ -302,7 +302,7 @@
 
             <p>可能对你来说只是普通的日常，但对我来说，其实是会认真记住的一段时间。</p>
 
-            <p>之前有哪次说话或者相处让你感到有压力，给你带来困扰了，真的很抱歉。我不太会跟女孩子说话，这种时候我会有些笨拙，不太会把握分寸。</p>
+            <p>之前有哪次说话或者相处让你感到有压力，给你带来困扰了，真的很抱歉。那种时候我会有些笨拙，不太会把握分寸。</p>
 
             <p>不用把它当成什么特别的东西，给同事玩也没关系，就说是我用来纪念第一次实习结束做的。</p >
 
@@ -311,19 +311,19 @@
             <hr class="divider">
             
             <div class="highlight">
-                "还是希望这个小桌宠偶尔能替我打个招呼。比如提醒你少熬夜，或者在ai写不好代码的时候陪你一起无语一下。"
+                "还是希望这个小桌宠偶尔能替我打个招呼。比如提醒你少熬夜，或者在ai写不好代码的时候陪你一起无语一下。希望你天天开心！"
             </div>
         </div>
 
         <div class="message-board">
-            <h2>💌 有什么想说的，就写在这里吧</h2>
+            <h2>💌 想写点什么的话，就随手留一句吧</h2>
             <form id="messageForm">
                 <textarea 
                     id="messageText"
-                    placeholder="如果哪天你想找人吐槽工作、聊点无聊的小事，我应该还是那个会回复的人。" 
+                    placeholder="看到这里的话，随便写一句也行，不写也完全没关系。"
                     required
                 ></textarea>
-                <button type="submit">发送留言</button>
+                <button type="submit">留个言</button>
                 <div id="formStatus"></div>
             </form>
         </div>
@@ -382,7 +382,7 @@
 
                 if (result.success) {
                     statusDiv.className = 'success';
-                    statusDiv.textContent = '留言成功 ♡';
+                    statusDiv.textContent = '收到啦，谢谢你 ♡';
                     statusDiv.style.display = 'block';
                     textarea.value = '';
                 } else {
@@ -396,7 +396,7 @@
                 statusDiv.style.display = 'block';
             } finally {
                 button.disabled = false;
-                button.textContent = '发送留言';
+                button.textContent = '留个言';
             }
         });
     </script>
